@@ -13,7 +13,7 @@
 
   <applications>
     <!-- Match all windows and remove their decorations (obxprop | grep "^_OB_APP") -->
-    <application class="chocolate-doom">
+    <application name="chocolate-doom" class="chocolate-doom">
       <decor>no</decor>
       <maximized>true</maximized>
       <focus>yes</focus>
@@ -349,6 +349,11 @@
     </keybind>
 
     <!-- Keybindings for running applications -->
+    <keybind key="A-F2">
+      <action name="Execute">
+        <command>gmrun</command>
+      </action>
+    </keybind>
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
